@@ -52,6 +52,7 @@ header {
 .cd-logo, .cd-nav-trigger {
   position: fixed;
   display: inline-block;
+  width: 100%;
 }
 
 .cd-logo {
@@ -160,9 +161,9 @@ header {
   -moz-transition-delay: 0.4s;
   transition-delay: 0.4s;
 }
-.cd-nav-trigger::before:hover{
+/*.cd-nav-trigger::before:hover{
   color: #07112b;
-}
+}*/
 .cd-nav-trigger::after {
   background-color: #d93541;
   -webkit-transform: scale(0);
@@ -344,14 +345,18 @@ header {
   background-color: #d93541;
 }
 
-.cd-content {
+.cd-content .row .col-md-6 .main-text{
   
-  margin-top: 15%;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-top: 25%;
+  
   line-height: 1.5em;
   z-index: 1;
 
+}
+
+.cd-content{
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .cd-content h1 {
@@ -359,7 +364,7 @@ header {
   text-transform: uppercase;
   font-size: 26px;
   font-family: 'RobotoB';
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   line-height: 1.5em;
 }
 .cd-content h3 {
@@ -376,7 +381,66 @@ a:hover{
   color: #b11c27;
   text-decoration:none;
 }
+.btn-block{
+  padding-top: 30px;
+  flex-direction: row;
+  margin-left: -2px;
+}
+.m-btn-left{
+    background-color: #d93541;
+    border-radius: 28px;
+    display: inline-block;
+    cursor: pointer;
+    color: #fff;
+    font-family: 'RobotoR';
+    font-size: 14px;
+    padding: 12px 20px;
+    text-decoration: none;
+    border: 0px;
+    margin: 5px;
+}
+.m-btn-left:focus{
+  outline: none;
+}
+.m-btn-left:hover{
+  background-color: #b11c27;
+}
+.m-btn-left:active{
+  background-color: #d93541;
+}
+.m-btn-right{
+    background-color: #fff;
+    border-radius: 28px;
+    display: inline-block;
+    cursor: pointer;
+    color: #d93541;
+    font-family: 'RobotoR';
+    font-size: 14px;
+    padding: 12px 20px;
+    text-decoration: none;
+    border: 1px solid;
+    border-color: #d93541;
+    margin: 5px;
+}
+.m-btn-right:focus{
+  outline: none;
+}
 
+.m-btn-right:hover{
+  border-color: #b11c27;
+  color: #b11c27;
+}
+.m-btn-right:active{
+  border-color: #d93541;
+  color: #d93541;
+}
+
+.animation{
+  margin-top: 5%;
+  width: 90%;
+  max-width: 420px;
+  float: right;
+}
 @media only screen and (min-width: 768px) {
 
 }
