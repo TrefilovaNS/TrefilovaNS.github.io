@@ -29,6 +29,7 @@ body {
   background-color: #fff;
   background-image: url('../img/background.jpg');
   background-size: 150px 150px;
+  overflow-y: hidden;
 }
 
 a {
@@ -357,6 +358,7 @@ header {
 .cd-content{
   margin-left: 10%;
   margin-right: 10%;
+  margin-top: 5%;
 }
 
 .cd-content h1 {
@@ -436,10 +438,16 @@ a:hover{
 }
 
 .animation{
-  margin-top: 5%;
+  
   width: 90%;
   max-width: 420px;
   float: right;
+}
+.icons{
+  float: right;
+}
+.footer{
+  bottom: 0px;
 }
 @media only screen and (min-width: 768px) {
 
