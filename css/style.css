@@ -50,7 +50,7 @@ header {
 }
 
 body > .container {
-    padding: 60px;
+    padding: 50px;
     width: 100%;
 }
 
@@ -448,21 +448,22 @@ a:hover{
 
 .animation{
   padding-top: 60px;
-  width: 90%;
-  max-width: 390px;
+  width: 390px;
   float: right;
- 
+
 }
 .icons{
   float: right;
 }
+
+
 .footer{
   
   display: inline-block;
   width: 100%;
   padding-left: 5%;
   padding-right: 5%;
-  padding-bottom: 20px;
+
 
 }
 @media only screen and (min-width: 768px) {
