@@ -29,7 +29,6 @@ body {
   background-color: #fff;
   background-image: url('../img/background.jpg');
   background-size: 150px 150px;
-  overflow-y: hidden;
 }
 
 a {
@@ -49,6 +48,12 @@ html, body {
 header {
   z-index: 3;
 }
+
+body > .container {
+    padding: 30px;
+    width: 100%;
+}
+
 
 .cd-logo, .cd-nav-trigger {
   position: fixed;
@@ -348,7 +353,7 @@ header {
 
 .cd-content .row .col-md-6 .main-text{
   
-  margin-top: 25%;
+  margin-top: 180px;
   
   line-height: 1.5em;
   z-index: 1;
@@ -358,11 +363,11 @@ header {
 .cd-content{
   margin-left: 10%;
   margin-right: 10%;
-  margin-top: 5%;
+  margin-top: -60px;
 }
 
 .cd-content h1 {
-  padding-top: 5%;
+  padding-top: 28px;
   text-transform: uppercase;
   font-size: 26px;
   font-family: 'RobotoB';
@@ -387,6 +392,10 @@ a:hover{
   padding-top: 30px;
   flex-direction: row;
   margin-left: -2px;
+}
+
+.m-btn-right, .m-btn-left{
+  width: 192px;
 }
 .m-btn-left{
     background-color: #d93541;
@@ -438,7 +447,7 @@ a:hover{
 }
 
 .animation{
-  
+  padding-top: 20px;
   width: 90%;
   max-width: 420px;
   float: right;
@@ -447,7 +456,13 @@ a:hover{
   float: right;
 }
 .footer{
-  bottom: 0px;
+  
+  display: inline-block;
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 20px;
+
 }
 @media only screen and (min-width: 768px) {
 
