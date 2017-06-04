@@ -454,6 +454,7 @@ a:hover{
 }
 .icons{
   float: right;
+  flex-direction: row;
 }
 
 .icons img{
