@@ -31,10 +31,6 @@ body {
   background-size: 150px 150px;
 }
 
-a {
-  color: #1e6074;
-  text-decoration: none;
-}
 
 /* -------------------------------- 
 
@@ -227,6 +223,14 @@ body > .container {
   -o-transform: translateY(0) rotate(-45deg);
   transform: translateY(0) rotate(-45deg);
 }
+.item-img {
+  background-image: url('../img/item1.jpg'); 
+  background-size: cover;
+
+  background-size: 100% 100%;
+ 
+}
+
 
 .cd-primary-nav {
   /* by default it's hidden */
@@ -237,7 +241,8 @@ body > .container {
   width: 100%;
   padding: 80px 5%;
   z-index: 3;
-  background-color: #fff;
+  background-image: url(../img/background.jpg);
+  background-size: 150px 150px;
   overflow: auto;
   /* this fixes the buggy scrolling on webkit browsers - mobile devices only - when overflow property is applied */
   -webkit-overflow-scrolling: touch;
@@ -249,20 +254,17 @@ body > .container {
 }
 .cd-primary-nav li {
   margin: 1.6em 0;
-  text-align: center;
+  text-align: left;
   text-transform: capitalize;
 }
-.cd-primary-nav a {
-  font-size: 20px;
-  font-size: 1.25rem;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-transition: color 0.2s;
-  -moz-transition: color 0.2s;
-  transition: color 0.2s;
+
+.no-touch .cd-primary-nav a {
+  font-size: 16px;
+  color: #000;
+  text-transform: uppercase;
 }
-.no-touch .cd-primary-nav a:hover {
-  color: #ffffff;
+.no-touch .cd-primary-nav a:hover{
+  color: #d93541;
 }
 .cd-primary-nav.fade-in {
   /* navigation visible at the end of the circle animation */
