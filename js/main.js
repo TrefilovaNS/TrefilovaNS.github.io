@@ -1,4 +1,5 @@
 jQuery(document).ready(function($){
+
 	var overlayNav = $('.cd-overlay-nav'),
 		overlayContent = $('.cd-overlay-content'),
 		navigation = $('.cd-primary-nav'),
@@ -82,4 +83,8 @@ jQuery(document).ready(function($){
 			left : -(diameterValue/2)+'px',
 		}, 0);
 	}
+
+$("ul a").hover(function() {
+  $("#pic").removeClass().addClass($(this).attr('rel'));
+});
 });

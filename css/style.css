@@ -223,12 +223,14 @@ body > .container {
   -o-transform: translateY(0) rotate(-45deg);
   transform: translateY(0) rotate(-45deg);
 }
-.item-img {
+#pic{
   background-image: url('../img/item1.jpg'); 
-  background-size: cover;
-
-  background-size: 100% 100%;
- 
+  background-size:     cover;                      /* <------ */
+  background-repeat:   no-repeat;
+  background-position: center center;    
+   
+    min-height: 1100px;
+    height: 100%;
 }
 
 
@@ -239,11 +241,11 @@ body > .container {
   top: 0;
   height: 100%;
   width: 100%;
-  padding: 80px 5%;
+  /*padding: 80px 5%;*/
   z-index: 3;
   background-image: url(../img/background.jpg);
   background-size: 150px 150px;
-  overflow: auto;
+  /*overflow: auto;*/
   /* this fixes the buggy scrolling on webkit browsers - mobile devices only - when overflow property is applied */
   -webkit-overflow-scrolling: touch;
   visibility: hidden;
@@ -262,9 +264,11 @@ body > .container {
   font-size: 16px;
   color: #000;
   text-transform: uppercase;
+  text-decoration: none;
 }
 .no-touch .cd-primary-nav a:hover{
   color: #d93541;
+  text-decoration: none;
 }
 .cd-primary-nav.fade-in {
   /* navigation visible at the end of the circle animation */
@@ -361,10 +365,7 @@ body > .container {
   align-items: center;
 }
 
-.gif-right {
-  display: flex;
-  align-items: right;
-}
+
 .container .main{
 
  
@@ -497,6 +498,34 @@ a:hover{
   padding-right: 5%;
   padding-bottom: 20px;
 
+}
+
+.items{
+  padding: 80px 5%;
+}
+
+#pic.p1 {
+  background-image: url("../img/item1.jpg");
+}
+#pic.p2 {
+  background-image: url("../img/item2.jpg");
+}
+#pic.p3 {
+  background-image: url("../img/item3.jpg");
+}
+#pic.p4 {
+  background-image: url("../img/item4.jpg");
+}
+#pic.p5 {
+  background-image: url("../img/item2.jpg");
+}
+
+#pic.p6 {
+  background-image: url("../img/item3.jpg");
+}
+
+.navbar-fixed-top, .navbar-fixed-bottom{
+  z-index: 1;
 }
 @media only screen and (min-width: 768px) {
 
