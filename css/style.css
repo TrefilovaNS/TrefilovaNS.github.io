@@ -360,6 +360,11 @@ body > .container {
   display: flex;
   align-items: center;
 }
+
+.gif-right {
+  display: flex;
+  align-items: right;
+}
 .container .main{
 
  
@@ -465,10 +470,15 @@ a:hover{
 }
 
 .animation{
-  padding-top: 10px;
-  width: 370px;
-  float: right;
+  width: 100%;
+  text-align: right;
+   margin-top: -15px;
+}
 
+.animation img{
+ 
+  width: 370px;
+ 
 }
 .icons{
   text-align: right;
