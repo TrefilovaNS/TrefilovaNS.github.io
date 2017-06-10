@@ -502,7 +502,7 @@ a:hover{
 }
 
 .items{
-  padding: 80px 5%;
+  padding: 80px 12%;
 }
 
 
@@ -528,6 +528,16 @@ a:hover{
 
 .navbar-fixed-top, .navbar-fixed-bottom{
   z-index: 1;
+}
+
+
+#menuFooter{
+  width: 50%;
+}
+
+#menuHeader{
+  margin-left: 30px;
+  margin-top: 20px;
 }
 @media only screen and (min-width: 768px) {
 
