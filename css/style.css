@@ -228,7 +228,7 @@ body > .container {
   background-size:     cover;                      /* <------ */
   background-repeat:   no-repeat;
   background-position: center center;    
-   
+    margin-left: -15px;
     min-height: 1100px;
     height: 100%;
 }
