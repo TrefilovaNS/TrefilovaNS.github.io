@@ -1,14 +1,42 @@
 jQuery(document).ready(function($){
 
+ImageSwitch=new Array();
+    ImageSwitch[0]='img/girl.gif';
+    ImageSwitch[1]='img/guy.gif';
+    
+
+    function swapImage() 
+    {
+        var value = ImageSwitch[Math.round(Math.random()*ImageSwitch.length)]
+        
+
+		if(value === undefined){
+		document.getElementById("gif").setAttribute("src", ImageSwitch[0])
+		}else{
+		document.getElementById("gif").setAttribute("src", value)
+		}
+    }
+
+
 	var overlayNav = $('.cd-overlay-nav'),
 		overlayContent = $('.cd-overlay-content'),
 		navigation = $('.cd-primary-nav'),
 		toggleNav = $('.cd-nav-trigger');
-
+	
+	document.onreadystatechange = function(e)
+{
+    if (document.readyState === 'complete')
+    {
+        swapImage();
+    }
+};
+	
 	//inizialize navigation and content layers
 	layerInit();
 	$(window).on('resize', function(){
 		window.requestAnimationFrame(layerInit);
+		
+
 	});
 
 	//open/close the menu and cover layers
@@ -87,4 +115,6 @@ jQuery(document).ready(function($){
 $("ul a").hover(function() {
   $("#pic").removeClass().addClass($(this).attr('rel'));
 });
+
+
 });
