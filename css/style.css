@@ -529,7 +529,7 @@ a:hover{
 
 
 #menuFooter{
-  width: 50%;
+  width: 60%;
   padding-left: 3%;
   padding-right: 3%;
   padding-bottom: 5px;
@@ -538,6 +538,10 @@ a:hover{
 #menuHeader{
   margin-left: 8%;
   margin-top: 4%;
+}
+
+.col-md-5{
+  padding-left: 0px;
 }
 @media only screen and (min-width: 768px) {
 
