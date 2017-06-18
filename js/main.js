@@ -3,6 +3,7 @@ jQuery(document).ready(function($){
 ImageSwitch=new Array();
     ImageSwitch[0]='img/girl.gif';
     ImageSwitch[1]='img/guy.gif';
+    ImageSwitch[2]='img/robot.gif';
     
 
     function swapImage() 
