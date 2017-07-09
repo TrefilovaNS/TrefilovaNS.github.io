@@ -63,6 +63,16 @@ body > .container {
     top: 45px;
     left: 45px;
 }
+
+.pg-logo {
+    padding-top: 45px;
+    padding-left: 45px;
+    display: inline-block;
+
+}
+
+
+
 .cd-logo img {
   display: block;
 }
@@ -235,6 +245,22 @@ body > .container {
     height: 100%;
 }
 
+.pg-pic{
+
+  background-image: url('../img/item1.jpg'); 
+  background-size:     cover;                      /* <------ */
+  background-repeat:   no-repeat;
+  background-position: center center; 
+  background-attachment: fixed;   
+    margin-left: -2%;
+    min-height: 1000px;
+    height: 100%;
+
+}
+
+.pg-main-text p{
+  margin-bottom: 30px;
+}
 
 .cd-primary-nav {
   /* by default it's hidden */
@@ -385,6 +411,12 @@ body > .container {
   
 }
 
+.pg-main-text{
+  line-height: 1.5em;
+  padding-left: 100px;
+  padding-top: 50px;
+}
+
 .cd-content{
   margin-left: 10%;
   margin-right: 10%;
@@ -506,6 +538,16 @@ a:hover{
   padding: 60px 16%;
 }
 
+.container.page{
+  padding: 0px;
+  
+
+}
+
+.justify{
+  text-align: justify;
+ 
+}
 
 #pic.p1 {
   background-image: url("../img/item1.jpg");
@@ -543,6 +585,11 @@ a:hover{
 
 .col-md-5{
   padding-left: 5%;
+  padding-right: 0px;
+}
+
+.row.page{
+  margin-right: 0px;
 }
 @media only screen and (min-width: 768px) {
 
