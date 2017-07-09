@@ -52,6 +52,7 @@ body > .container {
 }
 
 
+
 .cd-logo, .cd-nav-trigger {
   position: fixed;
   display: inline-block;
@@ -59,16 +60,16 @@ body > .container {
 }
 
 .cd-logo {
-  top: 28px;
-  left: 5%;
+    top: 45px;
+    left: 45px;
 }
 .cd-logo img {
   display: block;
 }
 
 .cd-nav-trigger {
-  top: 18px;
-  right: 5%;
+  top: 30px;
+  right: 30px;
   height: 44px;
   width: 44px;
   z-index: 5;
@@ -298,8 +299,8 @@ body > .container {
 .cd-overlay-nav, .cd-overlay-content {
   /* containers of the 2 main rounded backgrounds - these containers are used to position the rounded bgs behind the menu icon */
   position: fixed;
-  top: 18px;
-  right: 5%;
+  top: 30px;
+  right: 30px;
   height: 4px;
   width: 4px;
   -webkit-transform: translateX(-20px) translateY(20px);
@@ -474,7 +475,7 @@ a:hover{
 .animation{
   width: 100%;
   text-align: right;
-   margin-top: -15px;
+   margin-top: 15px;
 }
 
 #gif{
@@ -495,8 +496,8 @@ a:hover{
   
   display: inline-block;
   width: 100%;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 45px;
+  padding-right: 30px;
   padding-bottom: 20px;
 
 }
